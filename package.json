@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "run": "node server.js",
   "dependencies": {
     "async": "^2.0.0-rc.3",
     "babel-loader": "^6.2.4",
