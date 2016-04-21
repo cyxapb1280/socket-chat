@@ -1,0 +1,67 @@
+
+.message-form {
+  background: steelblue;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.message-input-container {
+  width: 90%;
+}
+
+#messageInput {
+  width: 100%;
+}
+
+.send-button {
+  width: 9%;
+}
+
+.message {
+}
+
+.message-history {
+}
+
+.message:nth-child(odd){
+  background: #d9edf7;
+}
+
+.message-text {
+  padding: 1em;
+}
+
+.message-date {
+  padding: 1em;
+  float: right;
+}
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: auto;
+}
+
+.form-container {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+}
+
+.js-hidden {
+  display: none;
+}
+
+
