@@ -1,30 +1,31 @@
 {
   "name": "socket-chat",
-  "version": "0.0.1",
-  "description": "Little chat for dear friends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
     "async": "^2.0.0-rc.3",
+    "babel-loader": "^6.2.4",
+    "babel-core": "^6.7.6",
+    "babel-preset-es2015": "^6.6.0",
     "body-parser": "^1.15.0",
-    "connect-mongo": "^1.1.0",
     "connect-redis": "^3.0.2",
+    "connect-mongo": "^1.1.0",
     "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
-    "mongoose": "^4.4.12",
-    "nconf": "^0.8.4",
-    "socket.io": "^1.4.5"
-  },
-  "devDependencies": {
-    "babel-core": "^6.7.6",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.6.0",
     "handlebars": "^4.0.5",
     "handlebars-loader": "^1.2.0",
+    "mongoose": "^4.4.12",
+    "nconf": "^0.8.4",
+    "socket.io": "^1.4.5",
     "source-map": "^0.5.3",
     "webpack": "^1.13.0"
   },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
