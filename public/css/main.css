@@ -1,14 +1,11 @@
 
 .message-form {
-  background: steelblue;
   padding: 3px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: 1em;
 }
 
 .message-input-container {
-  width: 90%;
+  width: 89%;
 }
 
 #messageInput {
@@ -16,13 +13,16 @@
 }
 
 .send-button {
-  width: 9%;
+  width: 10%;
 }
 
 .message {
+  margin: 1px;
 }
 
 .message-history {
+  overflow-y: auto;
+  height: 50em;
 }
 
 .message:nth-child(odd){
@@ -30,11 +30,10 @@
 }
 
 .message-text {
-  padding: 1em;
 }
 
 .message-date {
-  padding: 1em;
+  color: darkgray;
   float: right;
 }
 
@@ -62,6 +61,28 @@
 
 .js-hidden {
   display: none;
+}
+
+.emoji {
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+}
+
+.emoji-panel {
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  overflow-y: auto;
+}
+
+.emoji-container {
+  display: inline-block;
+}
+
+.emoji-container:hover {
+  background-color: #d9edf7;
+  box-shadow: 0 0 5px 0 #286090;
 }
 
 

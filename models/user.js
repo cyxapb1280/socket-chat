@@ -1,6 +1,9 @@
 /**
  * Created by Ruslan on 21-Apr-16.
  */
+
+'use strict';
+
 var crypto = require('crypto');
 
 var mongoose = require('../libs/mongoose'),

@@ -1,7 +1,8 @@
 {
+  "ip": "127.0.0.1",
   "port": 3000,
   "mongoose": {
-    "uri": "mongodb://localhost/chat",
+    "uri": "127.0.0.1:27017/chat",
     "options": {
       "server": {
         "socketOptions": {

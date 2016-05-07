@@ -27,7 +27,6 @@ class Chat extends Component{
     });
 
     this._messageForm.on('messageReady', this._onInputFieldMessageReady.bind(this));
-
     this._loginForm.on('login', this._onLoginFormLogin.bind(this));
   }
 
@@ -48,9 +47,27 @@ class Chat extends Component{
   _onLoginFormLogin(event) {
     this._socket = io();
     this._username = event.detail.username;
+    this._socket.emit('join', this._username);
+    this._loadMessageHistory(this._messageHistory.addMessages.bind(this._messageHistory));
 
     this._loginForm.hide();
     this._socket.on('broadcast', this._onSocketBroadcast.bind(this));
+  }
+  
+  _loadMessageHistory(callback) {
+    let xhr = new XMLHttpRequest();
+
+    xhr.open("GET", '/history', true);
+    
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState != 4) return;
+
+      if (xhr.status === 200) {
+        callback(JSON.parse(xhr.responseText));
+      }
+    };
+
+    xhr.send();
   }
 }
 

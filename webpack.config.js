@@ -3,11 +3,8 @@
  */
 'use strict';
 
-let path = require('path');
-let webpack = require('webpack');
-
 module.exports = {
-  entry: './frontend/js/app.js',
+  entry: __dirname +'/frontend/js/app.js',
   output: {
     path: __dirname + '/public/js/',
     filename: 'build.js'
